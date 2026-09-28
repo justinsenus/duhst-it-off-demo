@@ -75,7 +75,7 @@ button { cursor: pointer; }
 .section-heading .eyebrow { margin-bottom: 8px; }
 .section-heading h2 { font-size: clamp(42px, 4.5vw, 67px); line-height: .84; }
 .pink-period { color: var(--pink); }
-.title-swoosh { display: block; width: 148px; height: 16px; margin: 8px 0 0 71%; border-top: 7px solid var(--pink); border-radius: 50%; transform: rotate(-5deg); }
+.title-swoosh { display: block; width: 148px; height: 16px; margin: 8px 0 0 63%; border-top: 7px solid var(--pink); border-radius: 50%; transform: rotate(-5deg); }
 .section-intro { max-width: 550px; justify-self: end; margin: 0 0 10px; color: #202020; font-size: 16px; line-height: 1.55; }
 .service-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; scroll-margin-top: 100px; }
 .service-card { min-width: 0; overflow: hidden; border-radius: 13px; background: #090909; color: #fff; box-shadow: 0 6px 18px #00000012; }
@@ -280,9 +280,9 @@ html { scroll-padding-top: 72px; }
 
 .hero-stage { min-height: 540px; }
 .hero-photo {
-  inset: 0 0 0 36%;
+  inset: 0;
   background-image:
-    linear-gradient(90deg, #fff 0%, rgb(255 255 255 / 96%) 18%, rgb(255 255 255 / 70%) 34%, rgb(255 255 255 / 0%) 61%),
+    linear-gradient(90deg, #fff 0%, rgb(255 255 255 / 99%) 13%, rgb(255 255 255 / 91%) 25%, rgb(255 255 255 / 42%) 43%, rgb(255 255 255 / 0%) 61%),
     linear-gradient(0deg, #fff 0%, rgb(255 255 255 / 0%) 18%),
     url('assets/images/duhst-kitchen-hero-clean.webp');
   background-position: center, center, 53% 50%;
@@ -291,7 +291,7 @@ html { scroll-padding-top: 72px; }
 .hero-inner { display: block; min-height: 540px; }
 .hero-copy {
   position: absolute;
-  top: 47%;
+  top: 45%;
   left: 0;
   width: min(42%, 430px);
   max-width: 430px;
@@ -302,7 +302,7 @@ html { scroll-padding-top: 72px; }
   font-style: italic;
   letter-spacing: -.035em;
 }
-.hero h1 { font-size: clamp(56px, 6vw, 74px); line-height: .84; }
+.hero h1 { font-size: clamp(64px, 6.7vw, 82px); line-height: .82; }
 .hero-title-desktop { display: block; }
 .hero-title-mobile { display: none; }
 .hero h1 > span { color: var(--ink); }
