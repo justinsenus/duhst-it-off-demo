@@ -79,7 +79,7 @@ button { cursor: pointer; }
 .section-intro { max-width: 550px; justify-self: end; margin: 0 0 10px; color: #202020; font-size: 16px; line-height: 1.55; }
 .service-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; scroll-margin-top: 100px; }
 .service-card { min-width: 0; overflow: hidden; border-radius: 13px; background: #090909; color: #fff; box-shadow: 0 6px 18px #00000012; }
-.service-image { height: clamp(125px, 14vw, 190px); overflow: hidden; background: #eee; }
+.service-image { display: block; height: clamp(125px, 14vw, 190px); overflow: hidden; background: #eee; }
 .service-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s cubic-bezier(.2,.75,.25,1); }
 .service-card:hover .service-image img { transform: scale(1.045); }
 .service-info { position: relative; min-height: 112px; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 4px 10px; padding: 23px 14px 14px; }
@@ -395,4 +395,24 @@ html { scroll-padding-top: 72px; }
   .section-heading { margin-bottom: 15px; }
   .section-heading h2 { font-size: clamp(38px, 10.5vw, 46px); }
   .service-image { height: 100%; }
+}
+
+/* Wide desktop layout and service imagery; mobile styles above stay unchanged. */
+@media (min-width: 1201px) {
+  .header-inner { width: calc(100% - 48px); max-width: none; }
+  .hero-stage { width: 100%; max-width: none; }
+  .hero-inner { width: calc(100% - 112px); max-width: none; }
+  .hero-brand-art { left: 55%; width: min(34%, 410px); }
+  .trust-bar { width: calc(100% - 112px); max-width: none; }
+  .section-inner { width: calc(100% - 112px); max-width: none; }
+  .section-heading { gap: clamp(48px, 5vw, 96px); }
+  .title-swoosh { margin-left: min(63%, 400px); }
+  .service-grid { gap: clamp(14px, 1vw, 20px); }
+  .service-image { height: clamp(132px, 10vw, 200px); }
+  .service-icon { display: none; }
+  .service-info { min-height: 90px; padding-top: 11px; padding-bottom: 12px; }
+  .assurance-bar,
+  .faq-inner,
+  .footer-inner,
+  .footer-bottom { width: calc(100% - 112px); max-width: none; }
 }
